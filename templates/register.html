@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="wrapper">
+    <div id="main">
+        <div class="inner">
+
+            <section>
+                <header class="main">
+                    <h1 style="text-align: center;">Registro</h1>
+                </header>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="row gtr-uniform">
+
+                        <div class="col-6 col-12-xsmall">
+                            <input type="text" name="nombre" placeholder="Nombre">
+                        </div>
+
+                        <div class="col-6 col-12-xsmall">
+                            <input type="text" name="apellido" placeholder="Apellido">
+                        </div>
+
+                        <div class="col-6 col-12-xsmall">
+                            <input type="email" name="mail" placeholder="Email">
+                        </div>
+
+                        <div class="col-6 col-12-xsmall">
+                            <input type="text" name="telefono" placeholder="Teléfono">
+                        </div>
+
+                        <div class="col-6 col-12-xsmall">
+                            <input type="password" name="password" placeholder="Contraseña">
+                        </div>
+
+                        <div class="col-6 col-12-xsmall">
+                            <input type="password" name="confirm_password" placeholder="Confirmar contraseña">
+                        </div>
+
+                        <div class="col-12">
+                            <ul class="actions special">
+                                <li><input type="submit" value="Registrarse" class="primary"></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </form>
+
+            </section>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
