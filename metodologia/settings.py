@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-r-b9pa41868y)b3k_*q(f%*e$gqhn)=$(jldow@q0rutjbbh1r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['metodologia-jv74.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
