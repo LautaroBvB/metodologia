@@ -12,42 +12,79 @@
                     <h1 style="text-align: center;">Registro</h1>
                 </header>
 
-                <form method="post">
+                <form method="post" id="registerForm">
                     {% csrf_token %}
                     <div class="row gtr-uniform">
 
                         <div class="col-6 col-12-xsmall">
-                            <input type="text" name="nombre" placeholder="Nombre">
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                         </div>
 
                         <div class="col-6 col-12-xsmall">
-                            <input type="text" name="apellido" placeholder="Apellido">
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                         </div>
 
                         <div class="col-6 col-12-xsmall">
-                            <input type="email" name="mail" placeholder="Email">
+                            <input type="email" name="mail" id="mail" placeholder="Email" required>
                         </div>
 
                         <div class="col-6 col-12-xsmall">
-                            <input type="text" name="telefono" placeholder="Teléfono">
+                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
                         </div>
 
                         <div class="col-6 col-12-xsmall">
-                            <input type="password" name="password" placeholder="Contraseña">
+                            <input type="password" name="password" id="password" placeholder="Contraseña" required>
                         </div>
 
                         <div class="col-6 col-12-xsmall">
-                            <input type="password" name="confirm_password" placeholder="Confirmar contraseña">
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmar contraseña" required>
                         </div>
 
                         <div class="col-12">
                             <ul class="actions special">
-                                <li><input type="submit" value="Registrarse" class="primary"></li>
+                                <li><input type="submit" id="submitBtn" value="Registrarse" class="primary" disabled></li>
                             </ul>
                         </div>
 
                     </div>
                 </form>
+
+                <script>
+                    const form = document.getElementById('registerForm');
+                    const submitBtn = document.getElementById('submitBtn');
+                    const inputs = [
+                        document.getElementById('nombre'),
+                        document.getElementById('apellido'),
+                        document.getElementById('mail'),
+                        document.getElementById('telefono'),
+                        document.getElementById('password'),
+                        document.getElementById('confirm_password')
+                    ];
+                    const mailInput = document.getElementById('mail');
+                    const passwordInput = document.getElementById('password');
+                    const confirmPasswordInput = document.getElementById('confirm_password');
+
+                    function checkFormValidity() {
+                        const allFilled = inputs.every(input => input.value.trim() !== '');
+                        const emailValid = mailInput.validity.valid;
+                        const passwordsMatch = passwordInput.value === confirmPasswordInput.value;
+
+                        submitBtn.disabled = !(allFilled && emailValid);
+
+                        // Mostrar error visual si las contraseñas no coinciden
+                        if (confirmPasswordInput.value !== '' && !passwordsMatch) {
+                            confirmPasswordInput.setCustomValidity('Las contraseñas no coinciden');
+                        } else {
+                            confirmPasswordInput.setCustomValidity('');
+                        }
+                    }
+
+                    inputs.forEach(input => {
+                        input.addEventListener('input', checkFormValidity);
+                    });
+
+                    checkFormValidity();
+                </script>
 
             </section>
 
