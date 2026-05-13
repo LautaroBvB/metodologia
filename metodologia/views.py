@@ -100,7 +100,6 @@ def require_user(view_func):
     return wrapper
 
 
-@require_user
 def home(request):
     try:
         res = get_all_products()
@@ -448,7 +447,7 @@ def cart_view(request):
             "subtotal": item["subtotal"],
         })
 
-    return render(request, "cart.html", {
+    return render(request, "carrito.html", {
         "items": items,
         "total": payload["total"],
         "user_email": request.session.get("user_email"),
