@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {% extends 'base.html' %}
 {% load static %}
 
@@ -6,723 +5,157 @@
 <!-- Wrapper -->
 <div id="wrapper">
 
-	<!-- Main -->
-	<div id="main">
-		<div class="inner">
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo"><strong>Body Paint / </strong> Inicio</a>
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-				</ul>
-			</header>
+            <!-- Header -->
+            <header id="header">
+                <a href="{% url 'home' %}" class="logo"><strong>Body Paint / </strong> Inicio</a>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                    <li><a href="{% url 'cart' %}" class="icon solid fa-shopping-cart" aria-label="Carrito de compras"><span class="label">Carrito</span></a></li>
+                </ul>
+            </header>
 
-			<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-					<header>
-						<h1>Expertos en el<br />
-							arte de la piel</h1>
-						<p>Tu tienda online de insumos premium para Body Painting.</p>
-					</header>
-					<p>En Body Paint transformamos la creatividad en color. Ofrecemos una plataforma digital diseñada para que artistas y aficionados encuentren todo lo necesario: desde pinturas y pinceles de alta precisión hasta kits exclusivos armados por expertos.
+            <!-- Banner -->
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h1>Expertos en el<br />
+                            arte de la piel</h1>
+                        <p>Tu tienda online de insumos premium para Body Painting.</p>
+                    </header>
+                    <p>En Body Paint transformamos la creatividad en color. Ofrecemos una plataforma digital diseñada para que artistas y aficionados encuentren todo lo necesario: desde pinturas y pinceles de alta precisión hasta kits exclusivos armados por expertos.
 
-						Registrate para gestionar tus pedidos con múltiples domicilios de entrega, realiza tus pagos de forma segura a través de Mercado Pago o tarjetas de crédito, y recibí tus insumos donde quieras. Si buscás calidad, variedad y stock garantizado para tus creaciones corporales, estás en el lugar indicado.</p>
-					<ul class="actions">
-						<li><a href="#" class="button big">¡Ver más!</a></li>
-					</ul>
-				</div>
-				<span class="image object">
-					<img src="{% static 'images/inicio.png' %}" alt="" />
-				</span>
-			</section>
+                        Registrate para gestionar tus pedidos con múltiples domicilios de entrega, realiza tus pagos de forma segura a través de Mercado Pago o tarjetas de crédito, y recibí tus insumos donde quieras. Si buscás calidad, variedad y stock garantizado para tus creaciones corporales, estás en el lugar indicado.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button big">¡Ver más!</a></li>
+                    </ul>
+                </div>
+                <span class="image object">
+                    <img src="{% static 'images/inicio.png' %}" alt="" />
+                </span>
+            </section>
 
-			<!-- Section -->
-			<section>
-				<header class="major">
-					<h2>Empezá a crear</h2>
-				</header>
-				<div class="features">
-					<article>
-						<span class="icon solid fas fa-palette"></span>
-						<div class="content">
-							<h3>Insumos Premium</h3>
-							<p>Explorá nuestro catálogo de pinturas corporales, pinceles de alta precisión y herramientas profesionales diseñadas para artistas de todos los niveles. Calidad garantizada para tu piel.</p>
-						</div>
-					</article>
-					<article>
-						<span class="icon solid fas fa-user-check"></span>
-						<div class="content">
-							<h3>Creá tu Cuenta</h3>
-							<p>Registrate para gestionar tus pedidos fácilmente. Guardá múltiples domicilios de envío por defecto y agilizá tus futuras compras en nuestra plataforma.</p>
-						</div>
-					</article>
-					<article>
-						<span class="icon solid fas fa-shopping-cart"></span>
-						<div class="content">
-							<h3>Armá tu Pedido</h3>
-							<p>Agregá productos y kits exclusivos a tu carro de compras. Visualizá el monto total en tiempo real y modificá las cantidades según tus necesidades antes de confirmar.</p>
-						</div>
-					</article>
-					<article>
-						<span class="icon solid fas fa-credit-card"></span>
-						<div class="content">
-							<h3>Pago y Envío Seguro</h3>
-							<p>Confirmá tu compra seleccionando el domicilio de entrega y aboná de forma segura con tarjeta de crédito, efectivo contra entrega o a través de **Mercado Pago**.</p>
-						</div>
-					</article>
-				</div>
-			</section>
+            <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Empezá a crear</h2>
+                </header>
+                <div class="features">
+                    <article>
+                        <span class="icon solid fas fa-palette"></span>
+                        <div class="content">
+                            <h3>Insumos Premium</h3>
+                            <p>Explorá nuestro catálogo de pinturas corporales, pinceles de alta precisión y herramientas profesionales diseñadas para artistas de todos los niveles. Calidad garantizada para tu piel.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon solid fas fa-user-check"></span>
+                        <div class="content">
+                            <h3>Creá tu Cuenta</h3>
+                            <p>Registrate para gestionar tus pedidos fácilmente. Guardá múltiples domicilios de envío por defecto y agilizá tus futuras compras en nuestra plataforma.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon solid fas fa-shopping-cart"></span>
+                        <div class="content">
+                            <h3>Armá tu Pedido</h3>
+                            <p>Agregá productos y kits exclusivos a tu carro de compras. Visualizá el monto total en tiempo real y modificá las cantidades según tus necesidades antes de confirmar.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <span class="icon solid fas fa-credit-card"></span>
+                        <div class="content">
+                            <h3>Pago y Envío Seguro</h3>
+                            <p>Confirmá tu compra seleccionando el domicilio de entrega y aboná de forma segura con tarjeta de crédito, efectivo contra entrega o a través de Mercado Pago.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-			<!-- Section -->
-			<section>
-				<header class="major">
-					<h2>Catálogo de Artículos</h2>
-				</header>
-				<div class="posts">
-					{% for producto in productos %}
-					<article>
-						<a href="#" class="image">
-							{% if producto.imagen %}
-							<img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" />
-							{% else %}
-							<img src="{% static 'images/default.jpg' %}" alt="Sin imagen" />
-							{% endif %}
-						</a>
-						<h3>{{ producto.nombre }}</h3>
-						<p>{{ producto.descripcion|truncatechars:120 }}</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Ver más</a></li>
-						</ul>
-					</article>
-					{% empty %}
-					<p>No hay productos disponibles.</p>
-					{% endfor %}
-				</div>
-			</section>
+            <!-- Section -->
+            <section id="productos">
+                <header class="major">
+                    <h2>Catálogo de Artículos</h2>
+                </header>
+                <div class="posts">
+                    {% for producto in productos %}
+                    <article>
+                        <a href="#" class="image">
+                            {% if producto.imagen %}
+                            <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" />
+                            {% else %}
+                            <img src="{% static 'images/default.jpg' %}" alt="Sin imagen" />
+                            {% endif %}
+                        </a>
+                        <h3>{{ producto.nombre }}</h3>
+                        <p>{{ producto.descripcion|truncatechars:120 }}</p>
+                        <ul class="actions">
+                            <li><a href="#" class="button">Ver más</a></li>
+                        </ul>
+                    </article>
+                    {% empty %}
+                    <p>No hay productos disponibles.</p>
+                    {% endfor %}
+                </div>
+            </section>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<!-- Sidebar -->
-	<div id="sidebar">
-		<div class="inner">
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
 
-			<!-- Menu -->
-			<nav id="menu">
-				<header class="major">
-					{% if user.is_authenticated %}
-					<h2>{{ user.first_name }}</h2>
-					{% else %}
-					<h2>Menu</h2>
-					{% endif %}
-				</header>
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href="#">Preguntas Frecuentes</a></li>
+            <!-- Menu -->
+            <nav id="menu">
+                <header class="major">
+                    {% if user.is_authenticated %}
+                    <h2>{{ user.first_name }}</h2>
+                    {% else %}
+                    <h2>Menu</h2>
+                    {% endif %}
+                </header>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
 
-					{% if user.is_authenticated %}
-					<li><a href="#">Mi perfil</a></li>
-					<li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
-					{% else %}
-					<li><a href="{% url 'login' %}">Iniciar sesión</a></li>
-					{% endif %}
-				</ul>
-			</nav>
+                    {% if user.is_authenticated %}
+                    <li><a href="#">Mi perfil</a></li>
+                    <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+                    {% else %}
+                    <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
 
-			<!-- Section -->
-			<section>
-				<header class="major">
-					<h2>Contacto</h2>
-				</header>
-				<p>Estamos en Villa María para ofrecerte los mejores insumos de body paint y maquillaje artístico. Consultanos por stock, envíos o asesoramiento personalizado para tus proyectos.</p>
-				<ul class="contact">
-					<li class="icon solid fa-envelope"><a href="mailto:contacto@tuweb.com">bodypaint@gmail.com</a></li>
-					<li class="icon solid fa-phone">(+54 9) 353 - 4136384</li>
-					<li class="icon solid fa-home">Villa María, Córdoba<br />
-						Argentina, CP 5900</li>
-				</ul>
-			</section>
+            <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Contacto</h2>
+                </header>
+                <p>Estamos en Villa María para ofrecerte los mejores insumos de body paint y maquillaje artístico. Consultanos por stock, envíos o asesoramiento personalizado para tus proyectos.</p>
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="mailto:contacto@tuweb.com">bodypaint@gmail.com</a></li>
+                    <li class="icon solid fa-phone">(+54 9) 353 - 4136384</li>
+                    <li class="icon solid fa-home">Villa María, Córdoba<br />
+                        Argentina, CP 5900</li>
+                </ul>
+            </section>
 
-			<footer id="footer">
-				<p class="copyright">&copy; Body Paint. Todos los derechos reservados</p>
-			</footer>
+            <footer id="footer">
+                <p class="copyright">&copy; Body Paint. Todos los derechos reservados</p>
+            </footer>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
 </div>
 {% endblock %}
-=======
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Body Paint - Inicio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f7f7fb;
-            color: #252525;
-        }
-
-        header {
-            background: #1f1f2f;
-            color: white;
-            padding: 18px 32px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
-        header a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            margin-left: 16px;
-        }
-
-        .cart-toggle {
-            background: transparent;
-            border: 1px solid rgba(255, 255, 255, 0.45);
-            color: white;
-            border-radius: 999px;
-            cursor: pointer;
-            font-weight: 700;
-            margin-left: 16px;
-            padding: 8px 14px;
-        }
-
-        .profile-menu {
-            display: inline-block;
-            margin-left: 16px;
-            position: relative;
-        }
-
-        .profile-toggle {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 999px;
-            color: white;
-            cursor: pointer;
-            font-weight: 700;
-            padding: 8px 14px;
-        }
-
-        .profile-dropdown {
-            background: white;
-            border: 1px solid #e5e5ee;
-            border-radius: 8px;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
-            display: none;
-            min-width: 180px;
-            padding: 8px;
-            position: absolute;
-            right: 0;
-            top: calc(100% + 10px);
-            z-index: 40;
-        }
-
-        .profile-dropdown.is-open {
-            display: block;
-        }
-
-        .profile-dropdown a {
-            color: #252525;
-            display: block;
-            margin: 0;
-            padding: 10px 12px;
-        }
-
-        .profile-dropdown a:hover {
-            background: #f0f0f5;
-            border-radius: 6px;
-        }
-
-        .hero {
-            min-height: 520px;
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
-            align-items: center;
-            gap: 36px;
-            padding: 56px 8vw;
-            background: white;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            line-height: 1.1;
-            margin-bottom: 18px;
-            color: #1f1f2f;
-        }
-
-        .hero p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 24px;
-        }
-
-        .hero img {
-            width: 100%;
-            border-radius: 8px;
-            object-fit: cover;
-            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
-        }
-
-        .button {
-            display: inline-block;
-            background: #7a4bb2;
-            color: white;
-            border: 0;
-            border-radius: 5px;
-            padding: 11px 18px;
-            font-weight: 700;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .section {
-            padding: 42px 8vw;
-        }
-
-        .section h2 {
-            font-size: 30px;
-            margin-bottom: 24px;
-            color: #1f1f2f;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-        }
-
-        .feature {
-            background: white;
-            border: 1px solid #e5e5ee;
-            border-radius: 8px;
-            padding: 20px;
-        }
-
-        .feature h3 {
-            margin-bottom: 8px;
-        }
-
-        .feature p {
-            color: #666;
-            line-height: 1.45;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-        }
-
-        .product {
-            background: white;
-            border: 1px solid #e5e5ee;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .product img {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-            display: block;
-            background: #eee;
-        }
-
-        .product-content {
-            padding: 18px;
-        }
-
-        .product-content h3 {
-            margin-bottom: 8px;
-        }
-
-        .product-content p {
-            color: #666;
-            line-height: 1.45;
-            margin-bottom: 12px;
-        }
-
-        .product-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 14px;
-            font-weight: 700;
-        }
-
-        .cart-form {
-            display: flex;
-            gap: 10px;
-        }
-
-        .cart-form input {
-            width: 72px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        footer {
-            padding: 24px 8vw;
-            background: #1f1f2f;
-            color: white;
-        }
-
-        .cart-overlay {
-            background: rgba(0, 0, 0, 0.42);
-            inset: 0;
-            opacity: 0;
-            pointer-events: none;
-            position: fixed;
-            transition: opacity 0.2s ease;
-            z-index: 20;
-        }
-
-        .cart-overlay.is-open {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .cart-sidebar {
-            background: white;
-            box-shadow: -12px 0 30px rgba(0, 0, 0, 0.18);
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            max-width: 420px;
-            position: fixed;
-            right: 0;
-            top: 0;
-            transform: translateX(100%);
-            transition: transform 0.24s ease;
-            width: min(92vw, 420px);
-            z-index: 30;
-        }
-
-        .cart-sidebar.is-open {
-            transform: translateX(0);
-        }
-
-        .cart-sidebar-header,
-        .cart-sidebar-footer {
-            border-bottom: 1px solid #ececf3;
-            padding: 20px;
-        }
-
-        .cart-sidebar-header {
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .cart-sidebar-close {
-            background: #f0f0f5;
-            border: 0;
-            border-radius: 999px;
-            cursor: pointer;
-            font-size: 20px;
-            height: 36px;
-            width: 36px;
-        }
-
-        .cart-sidebar-body {
-            flex: 1;
-            overflow-y: auto;
-            padding: 12px 20px;
-        }
-
-        .cart-sidebar-item {
-            border-bottom: 1px solid #ececf3;
-            padding: 14px 0;
-        }
-
-        .cart-sidebar-item strong,
-        .cart-sidebar-item span {
-            display: block;
-        }
-
-        .cart-sidebar-item span {
-            color: #666;
-            margin-top: 4px;
-        }
-
-        .cart-total {
-            display: flex;
-            font-size: 18px;
-            font-weight: 800;
-            justify-content: space-between;
-            margin-bottom: 16px;
-        }
-
-        .cart-actions {
-            display: grid;
-            gap: 10px;
-        }
-
-        .cart-actions .secondary {
-            background: #f0f0f5;
-            color: #252525;
-            text-align: center;
-        }
-
-        @media (max-width: 800px) {
-            header {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
-            header a {
-                margin-left: 0;
-                margin-right: 14px;
-            }
-
-            .hero {
-                grid-template-columns: 1fr;
-                padding: 36px 24px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div><strong>Body Paint</strong></div>
-        <nav>
-            <a href="/">Inicio</a>
-            <a href="#productos">Productos</a>
-            <button class="cart-toggle" id="open-cart" type="button">Carrito (<span id="cart-count">{{ cart_count|default:0 }}</span>)</button>
-            {% if user_email %}
-                <div class="profile-menu">
-                    <button class="profile-toggle" id="profile-toggle" type="button">{{ user_email }}</button>
-                    <div class="profile-dropdown" id="profile-dropdown">
-                        <a href="/logout/">Cerrar sesion</a>
-                    </div>
-                </div>
-            {% else %}
-                <a href="/login/">Iniciar sesion</a>
-                <a href="/register/">Registrarse</a>
-            {% endif %}
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div>
-                <h1>Expertos en el arte de la piel</h1>
-                <p>Tu tienda online de insumos premium para body painting. Encontra pinturas, pinceles y kits seleccionados para artistas y aficionados.</p>
-                <a href="#productos" class="button">Ver productos</a>
-            </div>
-            <img src="{% static 'images/inicio.png' %}" alt="Body painting">
-        </section>
-
-        <section class="section">
-            <h2>Empeza a crear</h2>
-            <div class="features">
-                <article class="feature">
-                    <h3>Insumos premium</h3>
-                    <p>Pinturas corporales, pinceles de precision y herramientas profesionales para todos los niveles.</p>
-                </article>
-                <article class="feature">
-                    <h3>Crea tu cuenta</h3>
-                    <p>Registrate para armar pedidos, guardar tu carrito y comprar mas rapido.</p>
-                </article>
-                <article class="feature">
-                    <h3>Arma tu pedido</h3>
-                    <p>Agrega productos al carrito, modifica cantidades y revisa el total antes de confirmar.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="section" id="productos">
-            <h2>Productos disponibles</h2>
-            <div class="products">
-                {% for product in products %}
-                    <article class="product">
-                        {% if product.image %}
-                            <img src="{{ product.image }}" alt="{{ product.name }}">
-                        {% else %}
-                            <img src="{% static 'images/inicio.png' %}" alt="{{ product.name }}">
-                        {% endif %}
-                        <div class="product-content">
-                            <h3>{{ product.name }}</h3>
-                            <p>{{ product.description }}</p>
-                            <div class="product-meta">
-                                <span>${{ product.price }}</span>
-                                <span>Stock: {{ product.stock }}</span>
-                            </div>
-                            <form class="cart-form js-add-to-cart" method="POST" action="/cart/add/{{ product.id }}/">
-                                {% csrf_token %}
-                                <input type="number" name="quantity" value="1" min="1" max="{{ product.stock }}">
-                                <button class="button" type="submit">Agregar</button>
-                            </form>
-                        </div>
-                    </article>
-                {% empty %}
-                    <p>No hay productos disponibles.</p>
-                {% endfor %}
-            </div>
-        </section>
-    </main>
-
-    <div class="cart-overlay" id="cart-overlay"></div>
-    <aside class="cart-sidebar" id="cart-sidebar" aria-hidden="true">
-        <div class="cart-sidebar-header">
-            <h2>Tu carrito</h2>
-            <button class="cart-sidebar-close" id="close-cart" type="button" aria-label="Cerrar carrito">&times;</button>
-        </div>
-        <div class="cart-sidebar-body" id="cart-items">
-            <p>El carrito esta vacio.</p>
-        </div>
-        <div class="cart-sidebar-footer">
-            <div class="cart-total">
-                <span>Total</span>
-                <span id="cart-total">$0.00</span>
-            </div>
-            <div class="cart-actions">
-                <button class="button secondary" id="continue-shopping" type="button">Seguir comprando</button>
-                <a class="button" href="/cart/">Ir al carrito</a>
-            </div>
-        </div>
-    </aside>
-
-    <footer>
-        <p>Body Paint - Villa Maria, Cordoba</p>
-    </footer>
-    <script>
-        const cartSidebar = document.getElementById("cart-sidebar");
-        const cartOverlay = document.getElementById("cart-overlay");
-        const cartItems = document.getElementById("cart-items");
-        const cartCount = document.getElementById("cart-count");
-        const cartTotal = document.getElementById("cart-total");
-        const profileToggle = document.getElementById("profile-toggle");
-        const profileDropdown = document.getElementById("profile-dropdown");
-
-        function getCookie(name) {
-            const value = `; ${document.cookie}`;
-            const parts = value.split(`; ${name}=`);
-            if (parts.length === 2) {
-                return parts.pop().split(";").shift();
-            }
-            return "";
-        }
-
-        function formatCurrency(value) {
-            return `$${Number(value || 0).toFixed(2)}`;
-        }
-
-        function openCart() {
-            cartSidebar.classList.add("is-open");
-            cartOverlay.classList.add("is-open");
-            cartSidebar.setAttribute("aria-hidden", "false");
-        }
-
-        function closeCart() {
-            cartSidebar.classList.remove("is-open");
-            cartOverlay.classList.remove("is-open");
-            cartSidebar.setAttribute("aria-hidden", "true");
-        }
-
-        function renderCart(data) {
-            const items = data.cart_items || data.items || [];
-            cartCount.textContent = data.cart_count || 0;
-            cartTotal.textContent = formatCurrency(data.total);
-
-            if (!items.length) {
-                cartItems.innerHTML = "<p>El carrito esta vacio.</p>";
-                return;
-            }
-
-            cartItems.innerHTML = items.map((item) => `
-                <div class="cart-sidebar-item">
-                    <strong>${item.name}</strong>
-                    <span>Cantidad: ${item.quantity}</span>
-                    <span>Subtotal: ${formatCurrency(item.subtotal)}</span>
-                </div>
-            `).join("");
-        }
-
-        async function loadCart() {
-            const response = await fetch("/cart/data/", {
-                headers: { "X-Requested-With": "XMLHttpRequest" },
-            });
-            if (response.redirected) {
-                window.location.href = response.url;
-                return;
-            }
-            renderCart(await response.json());
-        }
-
-        document.getElementById("open-cart").addEventListener("click", async () => {
-            await loadCart();
-            openCart();
-        });
-        document.getElementById("close-cart").addEventListener("click", closeCart);
-        document.getElementById("continue-shopping").addEventListener("click", closeCart);
-        cartOverlay.addEventListener("click", closeCart);
-
-        if (profileToggle && profileDropdown) {
-            profileToggle.addEventListener("click", (event) => {
-                event.stopPropagation();
-                profileDropdown.classList.toggle("is-open");
-            });
-
-            document.addEventListener("click", () => {
-                profileDropdown.classList.remove("is-open");
-            });
-        }
-
-        document.querySelectorAll(".js-add-to-cart").forEach((form) => {
-            form.addEventListener("submit", async (event) => {
-                event.preventDefault();
-                const quantity = Number(form.querySelector("[name='quantity']").value || 1);
-
-                const response = await fetch(form.action, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "X-CSRFToken": getCookie("csrftoken"),
-                        "X-Requested-With": "XMLHttpRequest",
-                    },
-                    body: JSON.stringify({ quantity }),
-                });
-
-                if (response.redirected) {
-                    window.location.href = response.url;
-                    return;
-                }
-
-                const data = await response.json();
-                if (data.status === "ok") {
-                    renderCart(data);
-                    openCart();
-                }
-            });
-        });
-    </script>
-</body>
-</html>
->>>>>>> implementacion-supabase
